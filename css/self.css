@@ -173,8 +173,8 @@ header .logo {
     background-color: rgb(255 228 228);
     order:2;
 }
-.tab_title a:nth-child(6) {
-    background-color: rgb(196, 207, 123);
+.tab_title a.denby_shop {
+    background-color: rgb(237 234 255);
     order:3;
 }
 .tab_main {
@@ -208,7 +208,7 @@ header .logo {
     background-color: rgb(255 228 228);
 }
 .tab6 {
-    background-color: rgb(196, 207, 123);
+    background-color: rgb(237 234 255);
 }
 
 .tab1 .swiper1 .tab1_1 .slide_area .tab1_txt {
@@ -620,7 +620,8 @@ header .logo {
 .tab5 .swiper2 .tab2_1 .slide_area .tab1_img img:nth-last-child(-n+2) {
     height:160px;
 }
-.tab5 .swiper2 .tab2_2 .slide_area .d_itr div img {
+.tab5 .swiper2 .tab2_2 .slide_area .d_itr div img,
+.tab6 .swiper2 .tab2_2 .slide_area .d_itr div img {
     height:180px;
     width:auto;
     margin:20px auto;
@@ -631,7 +632,12 @@ header .logo {
 .tab5 .swiper2 .tab2_3 .slide_area div div img {
     width:100%;
 }
-
+.tab6 .swiper2 .tab2_1 .slide_area .tab1_img img {
+    height:40%;
+}
+.tab6 a.link_click {
+    width:80px;
+}
 
 
 

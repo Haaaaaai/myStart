@@ -110,15 +110,26 @@ $(function(){
     const images = document.querySelectorAll('.g');
     
     images.forEach(image => {
-        const classes = image.classList;
-        const uniqueClass = Array.from(classes).find(cls => cls.startsWith('uq'));
-        const { static: staticImg, gif: gifImg } = imgFiles[uniqueClass];
+        // const classes = image.classList;
+        // const uniqueClass = Array.from(classes).find(cls => cls.startsWith('uq'));
+        // const { static: staticImg, gif: gifImg } = imgFiles[uniqueClass];
 
-        image.addEventListener("mouseenter", function() {
-            image.src = gifImg;
+        // image.addEventListener("mouseenter", function() {
+        //     image.src = gifImg;
+        // });
+        // image.addEventListener("mouseleave", function() {
+        //     image.src = staticImg;
+        // });
+
+        const src = image.getAttribute('src');
+        const str = src.split('.');
+        const newSrc = str[0]+".gif";
+
+        image.addEventListener("mouseenter",function(){
+            image.src = newSrc
         });
         image.addEventListener("mouseleave", function() {
-            image.src = staticImg;
+            image.src = src;
         });
     });
 });
